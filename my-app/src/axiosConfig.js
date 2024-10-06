@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://employee-list-crud-mern.vercel.app/api',
+  baseURL: 'https://employee-list-crud-mern-jneezbt8a-prakashkakarllas-projects.vercel.app/api',
 });
 
 export default instance;
