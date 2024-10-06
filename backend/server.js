@@ -14,6 +14,16 @@ dotenv.config();
 app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Parse JSON requests
 
+
+const corsOptions = {
+    origin: 'https://employee-list-crud-mern.vercel.app/',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true, // Allow cookies if needed
+  };
+  
+  app.use(cors(corsOptions));
+
+
 // MongoDB connection
 const mongoURI = 'mongodb+srv://prakash:12345@cluster0.x8vbopr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'; // Change this to your actual database name
 mongoose.connect(mongoURI, {
