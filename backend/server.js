@@ -17,7 +17,7 @@ app.use(express.json()); // Parse JSON requests
 
 const corsOptions = {
     origin: '*',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    methods: ['GET', 'POST'],
     credentials: true, // Allow cookies if needed
   };
   
