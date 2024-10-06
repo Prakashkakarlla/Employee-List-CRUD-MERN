@@ -79,32 +79,25 @@ MONGODB_URI=mongodb+srv://prakash:12345@cluster0.x8vbopr.mongodb.net/?retryWrite
 JWT_SECRET=your_secret_key
 PORT=5000
   ```
-Start the backend server:
-
-bash
-Copy code
+5. **Start the backend server:**
+```bash
 npm start
+```
 The backend server will run at http://localhost:5000.
 
-Frontend Setup
-Navigate to the frontend folder:
 
-bash
-Copy code
-cd frontend
-Install frontend dependencies:
+### Frontend Setup
 
-bash
-Copy code
-npm install
-Start the frontend React app:
-
-bash
-Copy code
-npm start
+1. **Navigate to the frontend folder:**
+   ```bash
+   cd my-app
+   ```
+ 2. **Install frontend dependencies:**
+   ```bash
+   npm install
+   ```
+ 3. **Start the frontend React app:**
+   ```bash
+   npm start
+   ```
 The frontend React app will run at http://localhost:3000.
-
-csharp
-Copy code
-
-You can paste this into your **README.md** file for setting up both the backend and frontend.
