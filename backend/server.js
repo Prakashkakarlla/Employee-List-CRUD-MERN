@@ -25,7 +25,7 @@ const corsOptions = {
 
 
 // MongoDB connection
-const mongoURI = 'mongodb+srv://prakash:12345@cluster0.x8vbopr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'; // Change this to your actual database name
+const mongoURI = process.env.MONGO_URI; // Change this to your actual database name
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -51,6 +51,12 @@ app.use('/api/employees', employeeRoutes); // Employee management routes
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use('/employees', employeeRoutes); 
+
+// Catch all other errors
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
 
 // Start the server
 const PORT = process.env.PORT || 5000;
