@@ -15,7 +15,7 @@ app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Parse JSON requests
 
 // MongoDB connection
-const mongoURI = 'mongodb://localhost:27017/employee_management'; // Change this to your actual database name
+const mongoURI = 'mongodb+srv://prakash:12345@cluster0.x8vbopr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'; // Change this to your actual database name
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
