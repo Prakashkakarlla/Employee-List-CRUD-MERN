@@ -1,0 +1,42 @@
+/* Navbar.css */
+nav {
+    background-color: #007bff; /* Change this color to your preference */
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flex layout for horizontal navigation */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  nav li {
+    margin: 0 1rem; /* Margin between list items */
+  }
+  
+  nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold font */
+    transition: color 0.3s ease; /* Transition for hover effect */
+  }
+  
+  nav a:hover {
+    color: #e0e0e0; /* Change link color on hover */
+  }
+  
+  nav button {
+    background-color: transparent; /* Transparent background for button */
+    border: none; /* Remove default border */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold font */
+    transition: color 0.3s ease; /* Transition for hover effect */
+  }
+  
+  nav button:hover {
+    color: #e0e0e0; /* Change button color on hover */
+  }
+  
