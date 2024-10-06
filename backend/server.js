@@ -16,7 +16,7 @@ app.use(express.json()); // Parse JSON requests
 
 
 const corsOptions = {
-    origin: 'https://employee-list-crud-mern.vercel.app/',
+    origin: 'https://employee-list-crud-mern-grsv.vercel.app/',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true, // Allow cookies if needed
   };
