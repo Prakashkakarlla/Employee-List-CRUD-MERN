@@ -62,8 +62,9 @@ Before starting, ensure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/employee-management-system.git
+   git clone https://github.com/Prakashkakarlla/Employee-List-CRUD-MERN
    cd employee-management-system
+
 
 2. **Navigate to the backend folder:**
    ```bash
