@@ -16,7 +16,7 @@ app.use(express.json()); // Parse JSON requests
 
 
 const corsOptions = {
-    origin: 'https://employee-list-crud-mern-grsv.vercel.app/login',
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true, // Allow cookies if needed
   };
@@ -25,7 +25,7 @@ const corsOptions = {
 
 
 // MongoDB connection
-const mongoURI = process.env.MONGO_URI; // Change this to your actual database name
+const mongoURI = process.env.MONGODB_URI; // Change this to your actual database name
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
